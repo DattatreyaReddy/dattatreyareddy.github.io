@@ -11,5 +11,7 @@
 </p>
 
 <p align="center">
+<a href="https://github.com/DattatreyaReddy">
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=dattatreyareddy&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="padya's github stats" height="160px" />
+</a>
 </p>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="cyan" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+    <title>Padya</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #ffffff;
+            }
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            height: 100vh;
+            position: relative;
+        }
+
+        .vertical-center {
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Styling the GitHub button */
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            &:hover {
+                background-color: #6cc644;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vertical-center">
+            <p align="center">
+                <a target="_blank" href="https://github.com/DattatreyaReddy">
+                    <picture>
+                        <img src="./images/mona.gif" alt="flutter" width="80" height="80" />
+                    </picture>
+                </a>
+            </p>
+            <p align="center" style="margin-bottom: 40px;">
+                <a target="_blank" href="https://github.com/DattatreyaReddy">
+                    <picture>
+                        <source media="(prefers-color-scheme: dark)" srcset="./images/profile.dark.svg" />
+                        <img src="./images/profile.light.svg" alt="Padya" />
+                    </picture>
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <a href="https://github.com/DattatreyaReddy" target="_blank" class="github-btn">
+        <i class="fab fa-github"></i>
+    </a>
+    <!-- Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
